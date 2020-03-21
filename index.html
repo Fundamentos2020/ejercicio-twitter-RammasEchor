@@ -6,24 +6,38 @@
     <link rel="stylesheet" href="styles.css">
     <title>Twitter</title>
 </head>
-<body>
-    <div>
-        <h1>Local Storage</h1>
-        <div>
-            <div>
-                <form action="#">
+<body class="p-3">
+    <div class="w-100">
+        <h1 class="flex-all-center">Local Storage</h1>
+        <div class='doble-panel' >
+            <div class='panel'>
+                <form class="flex-column" action="#">
                     <label for="tweet">Tweet:</label>
-                    <textarea name="tweet"></textarea>
-                    <button>Agregar</button>
+                    <textarea id="tweet"></textarea>
+                    <button class="w-25 align-right flex-all-center" id="boton_agregar">Agregar</button>
                 </form>
             </div>
-            <div>
-                <h2>Mis Tweets</h2>
-                <div></div>
+            <div class='panel'>
+                <h2 class="flex-all-center">Mis Tweets</h2>
+                <div id="lista_tweets">
+                    <!-- <div class="flex-row bt p-2">
+                        <div class="col-2">
+                            <img class="img-fluid" src="https://picsum.photos/200">
+                        </div>
+                        <div class="p-1">
+                            <span class="flex-grow">Texto</span>
+                        </div>
+                        <div class="align-right">
+                            <button class="boton_eliminar">X</button>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </div>
+        <div class="pie_pagina">
+            {251737} - Luis Nieto Palacios
+        </div>
     </div>
-
     <script src="app.js"></script>
 </body>
 </html>
